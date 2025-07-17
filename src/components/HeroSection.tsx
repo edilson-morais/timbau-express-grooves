@@ -1,15 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-
 export function HeroSection() {
-  return (
-    <section className="relative text-center py-16">
+  return <section className="relative text-center py-16">
       <div className="container mx-auto px-4">
         {/* Beta Badge */}
         <div className="inline-block mb-8">
-          <span className="bg-primary/20 border border-primary/30 text-primary-glow px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm animate-float">
-            🥁 TIMBAU EXPRESS está em lançamento
-          </span>
+          <span className="bg-primary/20 border border-primary/30 text-primary-glow px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm animate-float">🥁 TIMBAU EXPRESS está em Relançamento</span>
         </div>
 
         {/* Hero Title */}
@@ -31,12 +27,8 @@ export function HeroSection() {
             <ArrowRight className="w-5 h-5 mr-2" />
             EU QUERO TOCAR TIMBAU
           </Button>
-          <Button variant="outline-glass" size="xl" className="w-full sm:w-auto">
-            <Play className="w-5 h-5 mr-2" />
-            Saiba mais
-          </Button>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
