@@ -23,11 +23,58 @@ const Index = () => {
       <AboutSection />
       
       {/* Footer */}
-      <footer className="py-8 border-t border-white/10">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">
-            © 2024 Timbau Express. Todos os direitos reservados.
-          </p>
+      <footer className="py-12 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-6">
+            {/* Disclaimer */}
+            <div className="max-w-4xl mx-auto">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A Comunidade NEW TIMBAU EXPRESS - GUSTAVO DI DALVA não é uma empresa associada ao WhatsApp INC, Facebook INC, META ou qualquer uma de suas empresas, e não possui relação comercial ou consentimento para uso.
+              </p>
+            </div>
+            
+            {/* Copyright */}
+            <div className="space-y-2">
+              <p className="text-sm text-muted-foreground">
+                Copyright © 2025. Desenvolvido por Edilson Morais. Ao fazer seu cadastro em nosso site, você concorda com os nossos Termos de Uso e Política de Privacidade.
+              </p>
+            </div>
+
+            {/* Brand Name */}
+            <div className="py-4">
+              <h3 className="text-lg font-semibold text-white">
+                NEW TIMBAU EXPRESS - GUSTAVO DI DALVA
+              </h3>
+            </div>
+
+            {/* Links */}
+            <div className="flex justify-center items-center gap-4 text-sm">
+              <a 
+                href="#" 
+                className="text-primary hover:text-primary-glow transition-colors"
+              >
+                Termos de Uso
+              </a>
+              <span className="text-muted-foreground">|</span>
+              <a 
+                href="https://politica-de-privacidade.rota50ia.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary-glow transition-colors"
+              >
+                Política de Privacidade
+              </a>
+            </div>
+
+            {/* Bottom info */}
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <p>Todos os direitos reservados – Edilson Morais 2025</p>
+              <p>
+                Contato: <a href="mailto:edilsomdil@gmail.com" className="text-primary hover:text-primary-glow transition-colors">edilsomdil@gmail.com</a>
+              </p>
+              <p>Desenvolvido por Edilson Morais</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
