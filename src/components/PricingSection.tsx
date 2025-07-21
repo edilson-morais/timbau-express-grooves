@@ -21,9 +21,7 @@ export function PricingSection() {
                 DE R$ 497
               </div>
               <div className="text-5xl md:text-6xl font-bold text-foreground mb-2">R$ 127</div>
-              <div className="text-xl text-muted-foreground">
-                Ou 12x de R$ 19,70 no cartão
-              </div>
+              <div className="text-xl text-muted-foreground">Ou 12x de R$ 12,70 no cartão</div>
             </div>
 
             <Button variant="hero" size="xl" className="w-full mb-6">
