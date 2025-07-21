@@ -24,9 +24,20 @@ export function PricingSection() {
               <div className="text-xl text-muted-foreground">Ou 12x de R$ 12,70 no cartão</div>
             </div>
 
-            <Button variant="hero" size="xl" className="w-full mb-6">
-              <ArrowRight className="w-5 h-5 mr-2" />
-              QUERO TOCAR TIMBAU COM O MESTRE GUSTAVO
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="w-full mb-6"
+              asChild
+            >
+              <a 
+                href="https://sun.eduzz.com/39ZB3ZRB9E?utm_source=nova+pv&utm_id=timbau+express+pv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ArrowRight className="w-5 h-5 mr-2" />
+                QUERO TOCAR TIMBAU COM O MESTRE GUSTAVO
+              </a>
             </Button>
 
             <div className="flex items-center justify-center gap-2 text-green-400 font-semibold">

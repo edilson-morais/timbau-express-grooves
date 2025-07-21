@@ -23,9 +23,20 @@ export function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <Button variant="hero" size="xl" className="w-full sm:w-auto">
-            <ArrowRight className="w-5 h-5 mr-2" />
-            EU QUERO TOCAR TIMBAU
+          <Button 
+            variant="hero" 
+            size="xl" 
+            className="w-full sm:w-auto"
+            asChild
+          >
+            <a 
+              href="https://sun.eduzz.com/39ZB3ZRB9E?utm_source=nova+pv&utm_id=timbau+express+pv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ArrowRight className="w-5 h-5 mr-2" />
+              EU QUERO TOCAR TIMBAU
+            </a>
           </Button>
           
         </div>
