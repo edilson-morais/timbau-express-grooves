@@ -3,18 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
   {
-    icon: VideoIcon,
-    title: "Aulas em HD",
-    description: "Gravadas com detalhes visuais e sonoros essenciais",
-    emoji: "🎥"
-  },
-  {
-    icon: BookOpen,
-    title: "Material Didático",
-    description: "PDFs para download, inclusive partituras",
-    emoji: "📚"
-  },
-  {
     icon: MessageCircle,
     title: "Suporte Direto",
     description: "Fale com a gente sempre que precisar, por e-mail.",
