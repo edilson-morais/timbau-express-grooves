@@ -3,28 +3,118 @@ import { Card, CardContent } from "@/components/ui/card";
 const modules = [
   {
     emoji: "🔥",
-    title: "MÓDULO 1 – Grooves Essenciais: Tucaia & Cabila",
-    description: "Comece com os fundamentos que formam a base do timbau moderno. Aqui você vai aprender e dominar grooves clássicos da Timbalada, com variações em diferentes andamentos."
+    title: "MÓDULO 1 - TUCAIA",
+    lessons: [
+      "01 - TUCAIA 01 - 80 BPM",
+      "02 - TUCAIA 01 - 160 BPM",
+      "03 - TUCAIA 02 - 80 BPM",
+      "04 - TUCAIA 02 - 160 BPM",
+      "05 - TUCAIA 03 - 80 BPM",
+      "06 - TUCAIA 03 - 160 BPM"
+    ]
   },
   {
     emoji: "🥁",
-    title: "MÓDULO 2 – Samba Duro com Pegada Profissional",
-    description: "Mergulhe no universo do Samba Duro, um dos ritmos mais marcantes da Bahia. Você vai aprender passo a passo as principais levadas."
+    title: "MÓDULO 2 - CABILA - AFRO BRASILEIRO",
+    lessons: [
+      "01 CABILA LÉ 1 60 BPM",
+      "02 CABILA LÉ 1",
+      "03 CABILA LÉ 2 60 BPM",
+      "04 CABILA LÉ 2",
+      "05 CABILA RUMPI 60 BPM",
+      "06 CABILA RUMPI",
+      "07 CABILA RUM 60 BPM",
+      "08 CABILA RUM"
+    ]
+  },
+  {
+    emoji: "🎯",
+    title: "MÓDULO 3 - EXERCÍCIOS PARA LIMPAR O SOM",
+    lessons: [
+      "EXPLICAÇÃO EXERCÍCIOS",
+      "SONS DO TIMBAU - AULA EXTRA",
+      "EXERCÍCIO 01",
+      "EXERCÍCIO 02",
+      "EXERCÍCIO 03",
+      "EXERCÍCIO 04",
+      "EXERCÍCIO 05",
+      "EXERCÍCIO 06",
+      "EXERCÍCIO 07",
+      "EXERCÍCIO 08",
+      "Open Slap Open Bass - AULA EXTRA",
+      "Open2 Slap+ Open2 Bass - AULA EXTRA",
+      "Open Slap Open Bass 1 e 2 por tempo - AULA EXTRA"
+    ]
   },
   {
     emoji: "🌶️",
-    title: "MÓDULO 3 – Merengue & Congo de Ouro: A Fusão Perfeita",
-    description: "Explore dois ritmos quentes que unem tradição e criatividade. Neste módulo você vai desenvolver a expressividade do Merengue Timbalada."
+    title: "MÓDULO 4 - MERENGUE TIMBALADA E CONGO DE OURO",
+    lessons: [
+      "MERENGUE TIMBALADA 01",
+      "MERENGUE TIMBALADA 02",
+      "MERENGUE TIMBALADA 03",
+      "CONGO DE OURO LÉ",
+      "CONGO DE OURO RUMPI",
+      "CONGO DE OURO RUM"
+    ]
   },
   {
     emoji: "⚡",
-    title: "MÓDULO 4 – Velocidade, Força & Clareza",
-    description: "Chegou a hora de evoluir tecnicamente. Este é um intensivo de exercícios práticos para ganhar velocidade, força de toque e definição nas notas."
+    title: "MÓDULO 5 - SAMBA DURO",
+    lessons: [
+      "01 SAMBA DURO 1",
+      "02 SAMBA DURO 1 - 60 BPM",
+      "03 SAMBA DURO 2",
+      "04 SAMBA DURO 2 - 60 BPM",
+      "05 SAMBA DURO 3",
+      "06 SAMBA DURO 3 - 60 BPM",
+      "07 SAMBA DURO 4",
+      "08 SAMBA DURO 4 - 60 BPM"
+    ]
+  },
+  {
+    emoji: "💀",
+    title: "MORTAL GROOVES",
+    lessons: [
+      "MORTAL GROOVE 1",
+      "MORTAL GROOVE 1 LENTO",
+      "MORTAL GROOVE 2",
+      "MORTAL GROOVE 2 LENTO",
+      "MORTAL GROOVE 3",
+      "MORTAL GROOVE 3 LENTO",
+      "MORTAL GROOVE 4",
+      "MORTAL GROOVE 4 LENTO",
+      "MORTAL GROOVE 5",
+      "MORTAL GROOVE 5 LENTO",
+      "MORTAL GROOVE 6",
+      "MORTAL GROOVE 6 LENTO",
+      "MORTAL GROOVE 7",
+      "MORTAL GROOVE 7 LENTO",
+      "MORTAL GROOVE 7 (Variação)",
+      "MORTAL GROOVE 7 LENTO (Variação)"
+    ]
   },
   {
     emoji: "💥",
-    title: "MÓDULO 5 – BÔNUS: Frases Mortais para Solos",
-    description: "Depois de dominar os fundamentos, vem o show! Aqui você vai aprender frases prontas e explosivas para improvisar, solar e se destacar."
+    title: "MORTAL PHRASES - FRASES PARA SOLOS",
+    lessons: [
+      "TIMBAU SOLO",
+      "MORTAL FRASES - EXPLICAÇÃO",
+      "FRASE 01",
+      "FRASE 02",
+      "FRASE 03",
+      "FRASE 04",
+      "FRASE 05",
+      "FRASE 06",
+      "FRASE 07",
+      "FRASE 08",
+      "FRASE 09",
+      "FRASE 10",
+      "FRASE 11",
+      "FRASE 12",
+      "FRASE 13",
+      "FRASE 14"
+    ]
   }
 ];
 
@@ -51,9 +141,14 @@ export function ModulesSection() {
                     <h3 className="text-xl md:text-2xl font-bold mb-4 text-foreground leading-tight">
                       {module.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed text-lg">
-                      {module.description}
-                    </p>
+                    <div className="space-y-2">
+                      {module.lessons.map((lesson, lessonIndex) => (
+                        <div key={lessonIndex} className="flex items-center text-muted-foreground">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
+                          <span className="text-sm leading-relaxed">{lesson}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </CardContent>
