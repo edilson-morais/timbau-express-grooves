@@ -10,7 +10,7 @@ export function HeroSection() {
 
         {/* Hero Title */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-text bg-clip-text text-transparent leading-tight">
-          🎯 1. Desperte o Timbaleiro que Existe em Você
+          Desperte o Timbaleiro que Existe em Você
         </h1>
 
         {/* Subtitle */}
