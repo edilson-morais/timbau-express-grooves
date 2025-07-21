@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Shield } from "lucide-react";
-
 export function PricingSection() {
-  return (
-    <section className="py-16">
+  return <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-text bg-clip-text text-transparent">
@@ -22,9 +20,7 @@ export function PricingSection() {
               <div className="text-2xl text-muted-foreground line-through mb-2">
                 DE R$ 497
               </div>
-              <div className="text-5xl md:text-6xl font-bold text-foreground mb-2">
-                R$ 197
-              </div>
+              <div className="text-5xl md:text-6xl font-bold text-foreground mb-2">R$ 127</div>
               <div className="text-xl text-muted-foreground">
                 Ou 12x de R$ 19,70 no cartão
               </div>
@@ -42,6 +38,5 @@ export function PricingSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 }
