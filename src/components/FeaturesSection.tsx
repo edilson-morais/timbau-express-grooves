@@ -17,25 +17,25 @@ const features = [
   {
     icon: MessageCircle,
     title: "Suporte Direto",
-    description: "Por e-mail para tirar dúvidas",
+    description: "Fale com a gente sempre que precisar, por e-mail.",
     emoji: "💬"
   },
   {
     icon: Brain,
     title: "Método Progressivo",
-    description: "Do básico ao avançado, passo a passo",
+    description: "Ideal para iniciantes e intermediários evoluírem com segurança.",
     emoji: "🧠"
   },
   {
     icon: Clock,
     title: "Liberdade Total",
-    description: "Estude onde e quando quiser, no seu ritmo",
+    description: "Acesso flexível para adaptar ao seu dia a dia.",
     emoji: "⏱️"
   },
   {
     icon: Lock,
     title: "Acesso Garantido",
-    description: "Por 2 anos, 24 horas por dia",
+    description: "Por 2 anos, com acesso contínuo e sem limites.",
     emoji: "🔒"
   }
 ];
