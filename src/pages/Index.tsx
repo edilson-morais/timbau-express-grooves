@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { PricingSection } from "@/components/PricingSection";
+import { GuaranteeSection } from "@/components/GuaranteeSection";
 import { AboutSection } from "@/components/AboutSection";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
       <FeaturesSection />
       <ModulesSection />
       <PricingSection />
+      <GuaranteeSection />
       <AboutSection />
       
       {/* Footer */}
