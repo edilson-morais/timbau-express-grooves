@@ -1,28 +1,69 @@
-import { Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function GuaranteeSection() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <Card className="max-w-4xl mx-auto bg-card/70 border-orange-500/40 backdrop-blur-sm shadow-glow">
-          <CardContent className="p-8 md:p-12 text-center">
-            <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center">
-                <Shield className="w-8 h-8 text-white" />
+        <div className="max-w-5xl mx-auto">
+          <Card className="bg-card/80 border-primary/60 backdrop-blur-sm shadow-glow">
+            <CardContent className="p-8 md:p-12">
+              <div className="grid md:grid-cols-[200px_1fr] gap-8 items-center">
+                {/* Guarantee Badge */}
+                <div className="flex justify-center md:justify-start">
+                  <div className="relative">
+                    <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex flex-col items-center justify-center shadow-lg border-4 border-orange-300">
+                      <div className="text-center">
+                        <div className="text-xs font-bold text-white uppercase tracking-wider mb-1">
+                          Garantia
+                        </div>
+                        <div className="text-2xl font-black text-white">
+                          15 DIAS
+                        </div>
+                        <div className="text-xs font-bold text-white uppercase tracking-wider mt-1">
+                          Incondicional
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary uppercase tracking-wider">
+                    Conheça Nossa Garantia
+                  </h2>
+                  
+                  <div className="mb-6">
+                    <p className="text-lg font-semibold text-foreground mb-2">
+                      Estás Protegido por nossa
+                    </p>
+                    <p className="text-xl font-bold text-primary">
+                      ⭐ Garantia Incondicional de Satisfação ⭐
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Fazendo sua inscrição hoje seu risco é zero, porque contas com nossa 
+                      garantia total incondicional de satisfação do Timbau Express.
+                    </p>
+                    
+                    <p>
+                      Se não quedas satisfeito com o método, solo envianos um email dentro de 
+                      15 dias e devolveremos 100% de tu dinero, sin ninguna pregunta.
+                    </p>
+                    
+                    <p>
+                      Creio que NÃO vamos a llegar a ese punto pero, si realmente estás 
+                      preocupado si esto va a funcionar para ti o no, quédate tranquilo, porque 
+                      tienes garantia.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Garantia de 7 dias
-            </h2>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              De acordo com o Art. 49 da Lei do Consumidor, você tem 7 dias de garantia. Se por algum motivo você não quiser 
-              continuar com o Curso, você terá seu dinheiro de volta, sem burocracia, basta pedir o reembolso!
-            </p>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
