@@ -11,19 +11,11 @@ export function GuaranteeSection() {
                 {/* Guarantee Badge */}
                 <div className="flex justify-center md:justify-start">
                   <div className="relative">
-                    <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex flex-col items-center justify-center shadow-lg border-4 border-orange-300">
-                      <div className="text-center">
-                        <div className="text-xs font-bold text-white uppercase tracking-wider mb-1">
-                          Garantia
-                        </div>
-                        <div className="text-2xl font-black text-white">
-                          15 DIAS
-                        </div>
-                        <div className="text-xs font-bold text-white uppercase tracking-wider mt-1">
-                          Incondicional
-                        </div>
-                      </div>
-                    </div>
+                    <img 
+                      src="/lovable-uploads/5cd8235d-18a0-4474-a793-adc100b7caf8.png" 
+                      alt="Garantia 15 Dias Incondicional"
+                      className="w-40 h-40 object-contain"
+                    />
                   </div>
                 </div>
 
