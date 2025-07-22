@@ -54,7 +54,7 @@ export function ReleaseSection() {
                 </div>
                 
                 {/* Image */}
-                <div className="relative h-full min-h-[500px] md:min-h-[600px]">
+                <div className="relative h-full min-h-[250px] md:min-h-[300px]">
                   <img 
                     src="/lovable-uploads/0374f5d6-5373-48ce-8ce9-e17936e0047a.png"
                     alt="Gustavo di Dalva - Percussionista e criador do Timbau Express"
